@@ -80,6 +80,3 @@ It supports both:
 5. Results are stored in database
 6. User can view summaries in history dashboard
 
----
-
-## 📂 Project Structure
