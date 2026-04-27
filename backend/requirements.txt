@@ -1,0 +1,9 @@
+django
+djangorestframework
+pymupdf
+langchain
+openai
+chromadb
+python-dotenv
+sumy
+nltk

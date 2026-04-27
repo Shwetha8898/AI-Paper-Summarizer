@@ -1,0 +1,150 @@
+/* ================= BASE ================= */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* App wrapper */
+.App {
+  text-align: center;
+}
+
+/* ================= DARK MODE ================= */
+body.dark {
+  background-color: #0d0d0d;
+  color: #ffffff;
+}
+
+/* Sidebar */
+body.dark .sidebar {
+  background-color: #111;
+  color: #fff;
+}
+
+/* Upload Box */
+body.dark .upload-box {
+  background-color: #1a1a1a;
+  border: 1px dashed #7b2cbf;
+}
+
+/* Buttons */
+body.dark button {
+  background: linear-gradient(90deg, #7b2cbf, #9d4edd);
+  color: white;
+  border: none;
+}
+
+/* ================= LIGHT MODE ================= */
+body.light {
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+/* Sidebar */
+body.light .sidebar {
+  background-color: #ffffff;
+  color: #000;
+  border-right: 1px solid #ddd;
+}
+
+/* Upload Box */
+body.light .upload-box {
+  background-color: #ffffff;
+  border: 1px dashed #999;
+}
+
+/* Buttons */
+body.light button {
+  background: #e0e0e0;
+  color: #000;
+  border: none;
+}
+
+/* ================= COMMON ================= */
+
+/* Upload card styling */
+.upload-box {
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* Button styling */
+button {
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* ================= FIXED TOP RIGHT BAR ================= */
+
+/* container for theme + profile */
+.top-right-bar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 1000;
+}
+
+/* REMOVE positioning from theme button */
+.theme-toggle {
+  /* ❌ removed position absolute */
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+/* avatar */
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #9333ea;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* sidebar logout (bottom) */
+.user-section {
+  margin-top: auto;
+  padding: 1rem;
+}
+
+.logout-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.theme-toggle {
+  position: static;
+  /* force remove old absolute */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  padding: 0;
+  /* remove extra spacing */
+}
+
+.top-right-bar>* {
+  display: flex;
+  align-items: center;
+}
